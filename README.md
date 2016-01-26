@@ -12,15 +12,15 @@ A simple test for PHP / JavaScript Developers
 
 ### Guidelines
 
-1. Your repo needs to include at minimum anything required to get the app working with detailed setup and run instructions should be provided in the `README.md` file.
-2. All libraries need to be consumed by Composer, Bower and NPM
-3. If a structured schema migration tool is not used then a setup script must be supplied to create any data tables etc
-4. Try not spend more than 2 hours on it
+1. Your repo needs to include at minimum anything required to get the app working.  Detailed instructions should be provided in the `README.md` file to setup and run the app.
+2. If a structured schema migration tool is not used then a setup script must be supplied to create any data tables etc
+3. Try not spend more than 2 hours on it
 
 ### Bonus Points
 
 * Make it Pretty
 * Make it as OO as possible
+* Consume dependencies with tools like Composer, Bower and NPM
 * Use patterns like MVC, ORM
 * Compile any front end assets with a build tool like gulp
 * Unit tests
