@@ -4,23 +4,15 @@ A simple test for PHP / JavaScript Developers
 
 ## Instructions
 
-1. Fork this repo
-2. Import the CSV file located in `data/customers.csv` into a database (MySQL or Mongo is preferred)
-3. Create a basic PHP web service that serves the data from the database as JSON
-4. Create a basic web page that loads the JSON into a list or table when you click a button
-5. Create a Pull Request
+Requirements:
+Apache2
+Composer
+Mysql
 
-### Guidelines
-
-1. Your repo needs to include at minimum anything required to get the app working.  Detailed instructions should be provided in the `README.md` file to setup and run the app.
-2. If a structured schema migration tool is not used then a setup script must be supplied to create any data tables etc
-3. Try not spend more than 2 hours on it
-
-### Bonus Points
-
-* Make it Pretty
-* Make it as OO as possible
-* Consume dependencies with tools like Composer, Bower and NPM
-* Use patterns like MVC, ORM
-* Compile any front end assets with a build tool like gulp
-* Unit tests
+To set up the application:
+1. Install a LAMP stack/use an existing LAMP stack
+2. Install composer https://getcomposer.org/doc/00-intro.md
+3. Run "composer install" to import dependencies and set up files 
+4. Set the database settings in the .env file that is in the root of the app.
+5. Visit the path /install on the host to import the CSV document
+6. Visit the path / on the host to view the app running
