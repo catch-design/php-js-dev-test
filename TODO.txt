@@ -1,0 +1,3 @@
+Standardise the coding conventions to use either tabs or spaces in the project
+Change the HTML table to be a CSS class based table instead of an HTML  table
+Convert CSS to use LESS
