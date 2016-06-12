@@ -1,3 +1,17 @@
+# Customer Information Portal
+
+# Requirements
+    - you need to install docker-compose
+
+# Running the app
+    - $ docker-compose up --build db customerapi
+    - load some data into the db (c.f. command below)
+
+# Loading Data
+    - $ docker exec -it database bash ./load_data
+
+
+
 # PHP JavaScript Developer Test
 
 A simple test for PHP / JavaScript Developers

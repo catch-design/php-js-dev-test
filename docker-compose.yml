@@ -1,0 +1,18 @@
+customerapi:
+    build: customerapi
+    container_name: customerapi
+    ports:
+        - "8001:80"
+    links:
+        - db
+    environment:
+        POSTGRES_USER: some-user
+        DATABASE_PASSWORD: a-secret-password-for-this-environment
+        POSTGRES_DB: dev-test-db
+db:
+    build: database
+    container_name: database
+    environment:
+        POSTGRES_USER: some-user
+        DATABASE_PASSWORD: a-secret-password-for-this-environment
+        POSTGRES_DB: dev-test-db
