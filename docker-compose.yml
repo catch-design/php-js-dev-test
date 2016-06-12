@@ -16,3 +16,8 @@ db:
         POSTGRES_USER: some-user
         DATABASE_PASSWORD: a-secret-password-for-this-environment
         POSTGRES_DB: dev-test-db
+apitest:
+    build: apitest
+    container_name: frisby_tests
+    links:
+        - customerapi

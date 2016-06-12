@@ -10,6 +10,11 @@
 # Loading Data
     - $ docker exec -it database bash ./load_data
 
+# Testing the API
+    - Get the app running
+    - Load data with the command above
+    - $ docker-compose up --build apitest
+
 
 
 # PHP JavaScript Developer Test
