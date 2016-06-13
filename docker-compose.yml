@@ -9,6 +9,13 @@ customerapi:
         POSTGRES_USER: some-user
         DATABASE_PASSWORD: a-secret-password-for-this-environment
         POSTGRES_DB: dev-test-db
+web:
+    build: web
+    container_name: webserver
+    ports:
+        - "8000:80"
+    links:
+        - customerapi
 db:
     build: database
     container_name: database
