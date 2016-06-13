@@ -19,7 +19,7 @@
     - Get the app running
     - Load data with the command above (if you've tested you need to do
       nothing else).
-    - Visit localhost:8000/index.php
+    - Visit localhost:8000
 
 
 
