@@ -4,11 +4,11 @@ A simple test for PHP / JavaScript Developers
 
 ## Instructions
 
-1. Fork this repo
+1. Fork or clone this repo
 2. Import the CSV file located in `data/customers.csv` into a database (MySQL or Mongo is preferred)
 3. Create a basic PHP web service that serves the data from the database as JSON
-4. Create a basic web page that loads the JSON into a list or table when you click a button
-5. Create a Pull Request
+4. Create a basic web page that asynchronously loads the JSON into a list or table when you click a button
+5. Create a pull request or email us at dev@catch.co.nz
 
 ### Guidelines
 
