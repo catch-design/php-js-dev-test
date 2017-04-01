@@ -1,0 +1,20 @@
+{
+  "name": "tomcaiger",
+  "version": "1.0.0",
+  "description": "basic sass compiler",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "time-grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-contrib-cssmin": "1.0.2",
+    "grunt": "*",
+    "grunt-sass": "*",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

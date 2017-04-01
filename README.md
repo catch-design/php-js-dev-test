@@ -1,26 +1,21 @@
-# PHP JavaScript Developer Test
+## Lumen PHP Framework
 
-A simple test for PHP / JavaScript Developers
+[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
+[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
+[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
 
-## Instructions
+Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-1. Fork or clone this repo
-2. Import the CSV file located in `data/customers.csv` into a database (MySQL or Mongo is preferred)
-3. Create a basic PHP web service that serves the data from the database as JSON
-4. Create a basic web page that asynchronously loads the JSON into a list or table when you click a button
-5. Create a pull request or email us at dev@catch.co.nz
+## Official Documentation
 
-### Guidelines
+Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
 
-1. Your repo needs to include at minimum anything required to get the app working.  Detailed instructions should be provided in the `README.md` file to setup and run the app.
-2. If a structured schema migration tool is not used then a setup script must be supplied to create any data tables etc
-3. Try not spend more than 2 hours on it
+## Security Vulnerabilities
 
-### Bonus Points
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-* Make it Pretty
-* Make it as OO as possible
-* Consume dependencies with tools like Composer, Bower and NPM
-* Use patterns like MVC, ORM
-* Compile any front end assets with a build tool like gulp
-* Unit tests
+### License
+
+The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
