@@ -1,21 +1,23 @@
-## Lumen PHP Framework
+## Project Summary
+The app consists of a restful service built with lumen micro-framework and a page which uses AngularJS to consume the service asynchronously. 
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+Code for the service can be found in app (routes are in app/hhtp), the view in resources, unit tests in tests/ServiceTest and front end code in public. 
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Project setup:
+ - create a new database 
+ - rename the .env.example file in the project root to .env 
+ - enter database name, user & password into .env
+ - composer install from project root
+ - php artisan migrate from project root
+ - import csv into database
+ - configure your web server's web root to be the public directory
 
-## Official Documentation
+ ## Front end build process:
+  - You don't need to do this to run the app, it would only be needed if you wanted to modify styles
+  - navigate to public/themes directory
+  - npm install to get dependencies 
+  - grunt dev or grunt dist to run tasks
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+  ## Bower:
+  - bower components are intentionally included as the per bower docs recommendation
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
