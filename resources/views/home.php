@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Catch Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="theme/css/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-resource.js"></script>
