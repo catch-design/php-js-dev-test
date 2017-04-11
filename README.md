@@ -24,3 +24,8 @@ A simple test for PHP / JavaScript Developers
 * Use patterns like MVC, ORM
 * Compile any front end assets with a build tool like gulp
 * Unit tests
+
+### Set up and run app
+1. Import users.sql to Database (I am using Mysql database for this, database named catchdesign, table named users)
+2. Configure database setting in application/config/database.php, change to your database setting 
+3. This website is based on CodeIgniter(MVC), I have restricted access to folder and file by .htaccess, only index.php, css, fonts, js are accessable
