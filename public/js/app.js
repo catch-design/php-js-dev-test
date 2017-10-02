@@ -52874,11 +52874,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
+            loading: false,
             columns: ['id', 'first_name', 'last_name', 'email', 'gender', 'ip_address', 'company', 'city', 'title', 'website'],
             tableData: [],
             options: {
@@ -52886,16 +52890,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
         };
     },
-    mounted: function mounted() {
-        //this.getCustomers();
-    },
+    mounted: function mounted() {},
 
 
     methods: {
         getCustomers: function getCustomers() {
             var _this = this;
 
+            this.loading = true;
             axios.get("/api/customers").then(function (res) {
+                _this.loading = false;
                 _this.tableData = res.data;
             });
         },
@@ -52927,7 +52931,15 @@ var render = function() {
             attrs: { type: "button" },
             on: { click: _vm.getCustomers }
           },
-          [_vm._v("Click to load customers")]
+          [
+            _vm._v("Click to load customers \n            "),
+            _c("span", { class: { spinner: true, show: _vm.loading } }, [
+              _c("span", {
+                staticClass: "fa fa-circle-o-notch fa-spin",
+                staticStyle: { "font-size": "24px" }
+              })
+            ])
+          ]
         )
       ]
     ),

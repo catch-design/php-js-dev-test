@@ -8369,3 +8369,16 @@ button.close {
   padding: 10px 0px;
 }
 
+.fa-spin {
+  vertical-align: sub;
+}
+
+.hide,
+.spinner {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
