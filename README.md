@@ -2,25 +2,66 @@
 
 A simple test for PHP / JavaScript Developers
 
-## Instructions
+## Install Instructions
 
-1. Fork or clone this repo
-2. Import the CSV file located in `data/customers.csv` into a database (MySQL or Mongo is preferred)
-3. Create a basic PHP web service that serves the data from the database as JSON
-4. Create a basic web page that asynchronously loads the JSON into a list or table when you click a button
-5. Create a pull request or email us at dev@catch.co.nz
+Built with Laravel 5 and vuejs2+
 
-### Guidelines
+---------
 
-1. Your repo needs to include at minimum anything required to get the app working.  Detailed instructions should be provided in the `README.md` file to setup and run the app.
-2. If a structured schema migration tool is not used then a setup script must be supplied to create any data tables etc
-3. Try not spend more than 2 hours on it
+**Example** 
+http://customers.aaron-m.co.nz
 
-### Bonus Points
+----------
 
-* Make it Pretty
-* Make it as OO as possible
-* Consume dependencies with tools like Composer, Bower and NPM
-* Use patterns like MVC, ORM
-* Compile any front end assets with a build tool like gulp
-* Unit tests
+**requires**
+- php7.1+
+- latest stable node & npm or yarn
+
+**Install Dependencies**
+```
+composer install
+npm install
+```
+
+**Compile javascript & scss**
+```
+npm run dev
+```
+
+**Setup Environment**
+```
+cp .env.example .env
+php artisan key:generate
+```
+
+**Configure MySQL connection details in .env**
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE={database name}
+DB_USERNAME={database user}
+DB_PASSWORD={database password}
+```
+
+**Setup the database**
+Log into mySql and create database
+```
+CREATE Database `{database name}`;
+```
+
+**Run migrations and seed with starting CSV Data**
+```
+php artisan migrate:refresh --seed
+```
+
+**Run build script if your making any changes to javascript or scss**
+```
+npm run watch
+```
+
+**Basic test**
+
+To test if the Customers endpoint is returning 200, run **`vendor/bin/phpunit`** from project root.
+
+## Use your favourite php7.1+ based server or VM.

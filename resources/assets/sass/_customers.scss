@@ -1,0 +1,17 @@
+.no-records {
+    text-align: center;
+    padding:100px 50px;
+    max-height: 500px;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.records{
+    padding:20px 30px;
+}
+
+.hide-button{
+    max-height: 0px;
+    opacity: 0;
+    padding:10px 0px;
+}
