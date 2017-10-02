@@ -8369,6 +8369,16 @@ button.close {
   padding: 10px 0px;
 }
 
+h2 {
+  color: #0ccca9;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  border-color: #0ccca9;
+  color: #0aad8f;
+}
+
 .fa-spin {
   vertical-align: sub;
 }
@@ -8380,5 +8390,9 @@ button.close {
 
 .show {
   display: initial;
+}
+
+.center {
+  text-align: center;
 }
 

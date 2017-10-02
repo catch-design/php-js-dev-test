@@ -6,25 +6,37 @@
     transition: all 1s;
 }
 
-.records{
+.records {
     padding:20px 30px;
 }
 
-.hide-button{
+.hide-button {
     max-height: 0px;
     opacity: 0;
     padding:10px 0px;
 }
 
-.fa-spin{
+h2 {
+    color:#0ccca9;
+}
+
+.btn-lg{
+    border-color:#0ccca9;
+    color:#0aad8f
+}
+
+.fa-spin {
     vertical-align: sub;
 }
 
-.hide, .spinner{
+.hide, .spinner {
     display: none;
 }
 
-.show{
+.show {
     display: initial;
 }
 
+.center {
+    text-align: center;
+}

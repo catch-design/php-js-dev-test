@@ -52922,7 +52922,7 @@ var render = function() {
       "div",
       { class: { "no-records": true, "hide-button": _vm.areRecords() } },
       [
-        _c("h1", [_vm._v("Looks like you have not loaded any customers yet!")]),
+        _c("h2", [_vm._v("Looks like you have not loaded any customers yet!")]),
         _vm._v(" "),
         _c(
           "button",

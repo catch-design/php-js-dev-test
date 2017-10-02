@@ -1,8 +1,8 @@
 <template>
     <div>
-
         <div v-bind:class="{ 'no-records': true, 'hide-button': areRecords() }">
-            <h1>Looks like you have not loaded any customers yet!</h1>
+             
+            <h2>Looks like you have not loaded any customers yet!</h2>
             <button type="button" @click='getCustomers' class="btn btn-default btn-lg">Click to load customers 
                 <span v-bind:class="{ 'spinner' : true, 'show' : loading }">
                     <span class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></span>
