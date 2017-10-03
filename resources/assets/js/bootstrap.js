@@ -1,3 +1,7 @@
+//added babel pollyfill so I could show my mum
+//she's using internet explorer
+import 'babel-polyfill';
+
 
 window._ = require('lodash');
 
@@ -51,3 +55,4 @@ if (token) {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
