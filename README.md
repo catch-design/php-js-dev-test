@@ -1,3 +1,20 @@
+## Instructions
+
+### Importing CSV data
+1. Running data_import.sh 
+
+./data_import.sh
+
+### PHP web service end point
+webservice/load_data.php
+
+### Customer information web page  
+views/customer.php
+
+
+
+### Original Instructions Below
+
 # PHP JavaScript Developer Test
 
 A simple test for PHP / JavaScript Developers
