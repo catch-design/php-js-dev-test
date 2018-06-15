@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# Remove the first line from the csv file
+FILE=data/customers.csv
+tail -n +2 "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+
+#copy into table from file
+psql -d "$POSTGRES_DB" -U "$POSTGRES_USER" \
+    -c "COPY customer FROM '/data/customers.csv' DELIMITER ',' CSV;"
+
+exit 0

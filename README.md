@@ -1,3 +1,28 @@
+# Customer Information Portal
+
+# Requirements
+    - you need to install docker-compose
+
+# Running the app
+    - $ docker-compose up --build db customerapi web
+    - load some data into the db (c.f. command below)
+
+# Loading Data
+    - $ docker exec -it database bash ./load_data
+
+# Testing the API
+    - Get the app running
+    - Load data with the command above
+    - $ docker-compose up --build apitest
+
+# Seeing the data in a browser
+    - Get the app running
+    - Load data with the command above (if you've tested you need to do
+      nothing else).
+    - Visit localhost:8000
+
+
+
 # PHP JavaScript Developer Test
 
 A simple test for PHP / JavaScript Developers
