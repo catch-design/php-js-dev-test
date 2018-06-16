@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="row justify-content-center">
-    <div class="col-md-10">
+    <div class="col-md-10 text-center">
         <h1>PHP JS Test - Laravel & Vue.js</h1>
     </div>
 </div>
