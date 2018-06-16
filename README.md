@@ -4,8 +4,7 @@ After analysing the data and requirements. I have selected Laravel framework and
 To import large or multiple CSV, I used batch process to speedup fetch and store functionality. The import functionality is looking for csv/s inside the  “data” folder.  It can also improvise by using laravel queues, and jobs to run process in background.After importing all data, page will hit the webservice which returns data in JSON format. To test web-service please use the endpoint “/api/users”.Vue. js will parse the JSON and render it to the webpage. The webpage will display the a table with pagination button next & previous. By click Next or Previous, it will fetch data asynchronously from the web-services.
 
 
-##Requirement
-
+### Requirement
 1. LAMP Environment Preferred
 2. PHP >= 7.1.3
 3. OpenSSL PHP Extension
