@@ -13,7 +13,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $data = Data::first();
+        if($data){
+            return view('welcome');
+        }
+        return redirect('/import');
     }
     public function import(){
         //$file = 'customers.csv';
@@ -31,23 +35,25 @@ class HomeController extends Controller
                 //email is mandatory and unique field
                 if(!empty($row->email) && !empty($row->first_name)) {
                     //check duplicate record
-                    if($this->avoidDuplicate($row->email))
+                    if($this->avoidDuplicate($row->email)) {
                         // dumping data to table
                         $data = new Data();
-                    $data->first_name = $row->first_name;
-                    $data->last_name = $row->last_name;
-                    $data->email = $row->email;
-                    $data->gender = $row->gender;
-                    $data->ip_address = $row->ip_address;
-                    $data->title = $title;
-                    $data->website = $row->website;
-                    $data->city = $city;
-                    $data->company = $company;
-                    $data->save();
+                        $data->first_name = $row->first_name;
+                        $data->last_name = $row->last_name;
+                        $data->email = $row->email;
+                        $data->gender = $row->gender;
+                        $data->ip_address = $row->ip_address;
+                        $data->title = $title;
+                        $data->website = $row->website;
+                        $data->city = $city;
+                        $data->company = $company;
+                        $data->save();
+                    }
                 }
             });
 
         });
+        return redirect('/');
     }
 
     private function getCity($data){
