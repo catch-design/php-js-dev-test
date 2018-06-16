@@ -15,6 +15,11 @@
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <h1>PHP JS Test - Laravel & Vue.js</h1>
+    </div>
+</div>
     <div class="row">
             <div id="app">
                     <home></home>
