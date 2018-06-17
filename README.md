@@ -38,5 +38,6 @@ To import large or multiple CSV, I used batch process to speedup fetch and store
 2. Extract zip in to root_directory
 3. Create a MYSQL DB
 4. Update the .env file with your DB Host, Username, Password and Database name.
-5. Now point a domain to /ROOT_FOLDER/GIT_FOLDER/public
-6. Cheers!! all done. Now hit you domain name in th browser.
+5. Run command in terminal php artisan migrate
+6. Now point a domain to /ROOT_FOLDER/GIT_FOLDER/public
+7. Cheers!! all done. Now hit you domain name in th browser.
