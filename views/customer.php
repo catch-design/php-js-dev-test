@@ -5,6 +5,7 @@
  * [Should have] Using DataTables.js to load the data
  */
 
+$customer = new Customer;
 
 class Customer {
 
