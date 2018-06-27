@@ -8,7 +8,7 @@ I've got the website running as per the instructions (which I've left below). I'
 
 I hosted this website using WAMP 3.0.6, and running it assumes it's unpacked into the root folder (wamp64/wwww/ for me).
 
-I've attached an SQL which should create the database and table as per how it was when I was finished with it, minus data.
+I've attached an SQL which should create the database and table as per how it was when I was finished with it, minus data. You'll need to edit the database connection file, located at model/database.php.
 
 Everything takes place on Index. CSV importing is automatic (if there is nothing in the database already) and pressing the button shows the customers in a table below.
 
