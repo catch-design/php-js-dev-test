@@ -1,0 +1,447 @@
+@font-face {
+    font-family: PoiretOne;
+    src: url(PoiretOne-Regular.ttf);
+    /*src: url(LANENAR.ttf);*/
+    /*src: url(Datalegreya-Thin.otf);*/
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:active, a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5{
+  font-size: 24px;
+}
+
+label{
+  font-size: 20px;
+}
+
+.header {
+  background-color: #84052b;
+  color: white;
+  font-family: PoiretOne;
+}
+
+.headerLeft {
+  margin: 25px;
+  margin-left: 200px;
+}
+
+.headerMiddle {
+  margin: 25px;
+}
+
+.headerRight {
+  float: right;
+  margin: 25px;
+  margin-right: 200px;
+}
+
+body {
+  background-color: #e8e8e8;
+  font-family: PoiretOne;
+}
+
+.title {
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 300px;
+}
+
+.bodyCentre {
+  margin: 100px;
+  margin-left: 700px;
+}
+
+.bodyMiddle {
+  margin: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.bodyLeft {
+  margin: 10px;
+  margin-left: 200px;
+  margin-right: 25px;
+}
+
+.bodyRight {
+  margin: 10px;
+  margin-left: 25px;
+  margin-right: 200px;
+}
+
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+  font-family: PoiretOne;
+}
+
+.footerLeft {
+  margin: 25px;
+  margin-left: 200px;
+  margin-right: 175px;
+}
+
+.footerMiddle {
+  margin: 25px;
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
+.footerRight {
+  margin: 25px;
+  margin-left: 175px;
+  margin-right: 200px;
+}
+
+.btn {
+  background-color: #aa0635;
+  border-color: #84052b;
+  color: white;
+}
+
+.btn:hover{
+  background-color: #d6d6d6;
+  border-color: #84052b;
+  color: black;
+}
+
+.nav-item {
+  color: white;
+}
+
+.input-group-addon {
+  border-color: #84052b;
+  background-color: #aa0635;
+  color: white;
+}
+
+.form-control {
+  border-color: #84052b;
+}
+
+.table {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 300px){
+  .headerLeft {
+    margin-left: 10px;
+  }
+  .headerRight {
+    margin: 10px;
+  }
+  .title {
+    margin: 10px;
+    margin-top: 40px;
+  }
+  .bodyLeft {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .bodyMiddle {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .bodyCentre {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .bodyRight {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .footerLeft {
+    margin: 10px;
+    margin-top: 20px;
+  }
+  .footerMiddle {
+    margin: 10px;
+    margin-top: 20px;
+  }
+  .footerRight {
+    margin: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .headerLeft {
+    margin-left: 50px;
+  }
+  .headerRight {
+    margin-top: 27px;
+    margin-right: 50px;
+  }
+  .title {
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 25px;
+  }
+  .bodyLeft {
+    margin: 25px;
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 325px;
+  }
+  .bodyMiddle {
+    margin: 50px;
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 600px;
+  }
+  .bodyCentre {
+    margin: 100px;
+    margin-left: 150px;
+    width: 450px;
+  }
+  .bodyRight {
+    float: right;
+    margin: 25px;
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 325px;
+  }
+  .footerLeft {
+    margin: 25px;
+    width: 200px;
+  }
+  .footerMiddle {
+    margin-top: 25px;
+    width: 200px;
+  }
+  .footerRight {
+    width: 200px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .headerLeft {
+    margin-left: 50px;
+  }
+  .headerRight {
+    margin-top: 27px;
+    margin-right: 50px;
+  }
+  .title {
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .bodyLeft {
+    margin-left: 50px;
+    margin-right: 5px;
+    width: 375px;
+  }
+  .bodyMiddle {
+    margin-left: 150px;
+    width: 600px;
+  }
+  .bodyCentre {
+    margin: 100px;
+    margin-left: 225px;
+    width: 450px;
+  }
+  .bodyRight {
+    float: right;
+    margin-right: 50px;
+    margin-left: 5px;
+    width: 375px;
+  }
+  .footerLeft {
+    margin: 25px;
+    width: 200px;
+  }
+  .footerMiddle {
+    margin-top: 25px;
+    width: 200px;
+  }
+  .footerRight {
+    width: 200px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .headerLeft {
+    margin-left: 50px;
+  }
+  .headerRight {
+    margin-top: 27px;
+    margin-right: 50px;
+  }
+  .title {
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .bodyLeft {
+    margin: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 425px;
+  }
+  .bodyMiddle {
+    margin: 50px;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 800px;
+  }
+  .bodyCentre {
+    margin: 100px;
+    margin-left: 250px;
+    width: 450px;
+  }
+  .bodyRight {
+    margin: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 425px;
+  }
+  .footerLeft {
+    margin: 25px;
+    width: 300px;
+  }
+  .footerMiddle {
+    margin-top: 25px;
+    width: 300px;
+  }
+  .footerRight {
+    width: 300px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .headerLeft {
+    margin-left: 50px;
+  }
+  .headerRight {
+    margin-top: 27px;
+    margin-right: 50px;
+  }
+  .title {
+    margin-top: 40px;
+    margin-left: 125px;
+  }
+  .bodyLeft {
+    margin: 125px;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    width: 450px;
+  }
+  .bodyMiddle {
+    margin: 25px;
+    margin-left: 150px;
+    width: 1000px;
+  }
+  .bodyCentre {
+    margin: 100px;
+    margin-left: 400px;
+    width: 500px;
+  }
+  .bodyRight {
+    float: right;
+    margin: 125px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    width: 450px;
+  }
+  .footerLeft {
+    margin: 50px;
+    margin-top: 25px;
+    width: 300px;
+  }
+  .footerMiddle {
+    margin: 50px;
+    margin-top: 25px;
+    width: 300px;
+  }
+  .footerRight {
+    float: right;
+    margin: 25px;
+    margin-left: 50px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  .headerLeft {
+    margin-left: 325px;
+  }
+  .headerRight {
+    margin-top: 27px;
+  }
+  .title {
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 300px;
+  }
+  .bodyLeft {
+    margin: 300px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    width: 600px;
+  }
+  .bodyMiddle {
+    margin: 25px;
+    margin-left: 350px;
+    width: 1200px;
+  }
+  .bodyCentre {
+    margin: 100px;
+    margin-left: 700px;
+    width: 500px;
+  }
+  .bodyRight {
+    margin: 300px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    width: 600px;
+  }
+  .footerLeft {
+    margin-left: 275px;
+    width: 300px;
+  }
+  .footerMiddle {
+    margin-left: 175px;
+    width: 300px;
+  }
+  .footerRight {
+    margin-left: 175px;
+    margin-right: 200px;
+    width: 300px;
+  }
+}

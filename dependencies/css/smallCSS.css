@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Datal-Thin;
+    src: url(PoiretOne-Regular.ttf);
+    /*src: url(LANENAR.ttf);*/
+    /*src: url(Datalegreya-Thin.otf);*/
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5{
+  font-size: 24px;
+}
+
+label{
+  font-size: 20px;
+}
+
+.header {
+  background-color: #84052b;
+  color: white;
+  font-family: Datal-Thin;
+}
+
+.headerLeft {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.headerContent {
+  margin: 20px;
+}
+
+.headerRight {
+  margin: 20px;
+  margin-right: 50px;
+}
+
+body {
+  background-color: #e8e8e8;
+  font-family: Datal-Thin;
+}
+
+.bodyContent {
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+  font-family: Datal-Thin;
+}
+
+.footerLeft {
+  margin: 10px;
+  margin-left: 75px;
+  margin-right: 50px;
+}
+
+.footerMiddle {
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footerRight {
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 75px;
+}
+
+.btn {
+  background-color: #aa0635;
+  border-color: #84052b;
+  color: white;
+}
+
+.btn:hover{
+  background-color: #d6d6d6;
+  border-color: #84052b;
+  color: black;
+}
+
+.nav-item {
+  color: white;
+}
+
+/*.form-control {
+  background-color: #d6d6d6;
+  color: white;
+}*/
