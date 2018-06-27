@@ -27,49 +27,49 @@ class populateDB {
                                   :website)");
 
     foreach ($spreadsheet->getRowIterator() as $row){
-      if($count != 0){
-        $column= 0;
+      if($count != 0){ //Skip the header row
+        $column = 0;   //Skip the ID Column as we're autoincrementing.
         $cellIterator = $row->getCellIterator();
-          foreach($cellIterator as $cell){
-            if($column == 1){
-              $fName    = $cell->getValue();
-            } else if($column == 2){
-              $lName    = $cell->getValue();
-            } else if($column == 3){
-              $email    = $cell->getValue();
-            } else if($column == 4){
+        foreach($cellIterator as $cell){
+          if($column == 1){
+            $fName    = $cell->getValue();
+          } else if($column == 2){
+            $lName    = $cell->getValue();
+          } else if($column == 3){
+            $email    = $cell->getValue();
+          } else if($column == 4){
 
-              if($cell->getValue() == "Female") {
-                $gender = 0;
-              } else {
-                $gender = 1;
-              }
-
-            } else if($column == 5){
-              $ipAdd    = $cell->getValue();
-            } else if($column == 6){
-              $company  = $cell->getValue();
-            } else if($column == 7){
-              $city     = $cell->getValue();
-            } else if($column == 8){
-              $title    = $cell->getValue();
-            } else if($column == 9){
-              $website  = $cell->getValue();
+            if($cell->getValue() == "Female") {
+              $gender = 0;
+            } else {
+              $gender = 1;
             }
-            $column++;
+
+          } else if($column == 5){
+            $ipAdd    = $cell->getValue();
+          } else if($column == 6){
+            $company  = $cell->getValue();
+          } else if($column == 7){
+            $city     = $cell->getValue();
+          } else if($column == 8){
+            $title    = $cell->getValue();
+          } else if($column == 9){
+            $website  = $cell->getValue();
           }
-          $query->bindParam(":fName", $fName);
-          $query->bindParam(":lName", $lName);
-          $query->bindParam(":email", $email);
-          $query->bindParam(":gender", $gender);
-          $query->bindParam(":ipAdd", $ipAdd);
-          $query->bindParam(":company", $company);
-          $query->bindParam(":city", $city);
-          $query->bindParam(":title",  $title);
-          $query->bindParam(":website", $website);
-          $query->execute();
+          $column++;
         }
-        $count++;
+        $query->bindParam(":fName", $fName);
+        $query->bindParam(":lName", $lName);
+        $query->bindParam(":email", $email);
+        $query->bindParam(":gender", $gender);
+        $query->bindParam(":ipAdd", $ipAdd);
+        $query->bindParam(":company", $company);
+        $query->bindParam(":city", $city);
+        $query->bindParam(":title",  $title);
+        $query->bindParam(":website", $website);
+        $query->execute();
+      }
+      $count++;
     }
   }
 }
