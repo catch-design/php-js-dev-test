@@ -31,13 +31,13 @@ class populateDB {
         $column= 0;
         $cellIterator = $row->getCellIterator();
           foreach($cellIterator as $cell){
-            if($column == 0){
+            if($column == 1){
               $fName    = $cell->getValue();
-            } else if($column == 1){
-              $lName    = $cell->getValue();
             } else if($column == 2){
-              $email    = $cell->getValue();
+              $lName    = $cell->getValue();
             } else if($column == 3){
+              $email    = $cell->getValue();
+            } else if($column == 4){
 
               if($cell->getValue() == "Female") {
                 $gender = 0;
@@ -45,15 +45,15 @@ class populateDB {
                 $gender = 1;
               }
 
-            } else if($column == 4){
-              $ipAdd    = $cell->getValue();
             } else if($column == 5){
-              $company  = $cell->getValue();
+              $ipAdd    = $cell->getValue();
             } else if($column == 6){
-              $city     = $cell->getValue();
+              $company  = $cell->getValue();
             } else if($column == 7){
-              $title    = $cell->getValue();
+              $city     = $cell->getValue();
             } else if($column == 8){
+              $title    = $cell->getValue();
+            } else if($column == 9){
               $website  = $cell->getValue();
             }
             $column++;
