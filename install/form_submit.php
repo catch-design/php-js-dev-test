@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/catchnz-test/install/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/install/config.php');
 $config = new config();
 $config->isInstalled = false;//$_POST['isInstalled'];
 $config->db_host = $_POST['db_host'];

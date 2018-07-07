@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/catchnz-test/install/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/install/config.php');
 class db extends config{
 
     public $isConnected = false;

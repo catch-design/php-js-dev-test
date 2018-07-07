@@ -11,7 +11,7 @@ class config {
     }
 
     public function loadConfig() {
-        $string = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/catchnz-test/config.json');
+        $string = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/config.json');
         $json_a = json_decode($string, true);
 
         $this->isInstalled = $json_a['isInstalled'];
@@ -33,7 +33,7 @@ class config {
     }
 
     public function saveConfig(){
-        $fp = fopen($_SERVER['DOCUMENT_ROOT'] . '/catchnz-test/config.json', 'w');
+        $fp = fopen($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/config.json', 'w');
         fwrite($fp, $this->toJson());
         fclose($fp);
     }
