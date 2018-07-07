@@ -2,6 +2,15 @@
 
 A simple test for PHP / JavaScript Developers
 
+## Instruction
+1. The project files should be inside catchnz-test directory
+2. Navigate to http://domain-name/catchnz_test/index.php after uploading to server
+3. Enter database host, username, password and database name in the form when asked
+4. Once the installation is finished, it will be redirected to the home page
+5. click on "Import CSV Data" button to import data from CSV file to database
+6. Click on "Show Customers" button to load imported data from database
+7. I used MySQL DB
+
 ## Instructions
 
 1. Fork or clone this repo
