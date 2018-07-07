@@ -17,8 +17,10 @@ if(!$config->isInstalled){
         $sql = "CREATE DATABASE " . $config->db_name;
         if (mysqli_query($conn, $sql)) {
             mysqli_close($conn);
+            $config->isInstalled = true;
+            $config->saveConfig();
             echo 'success';
         } else {
-            die "Error creating database: " . mysqli_error($conn);
+            echo "Error creating database: " . mysqli_error($conn);
         }
     }

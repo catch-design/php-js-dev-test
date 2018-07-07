@@ -1,5 +1,10 @@
 <?php
+
 require_once($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/install/config.php');
+// load constants, populate in html, then run ...
+	/**
+	 * db class extending from config class
+	 */
 class db extends config{
 
     public $isConnected = false;
@@ -9,6 +14,10 @@ class db extends config{
         $this->connect();
     }
 
+    // mysql connecting method
+	/**
+	 * connect to mysql db with the given parameters
+	 */
     public function connect(){
         if(!$this->isConnected)
         {
@@ -34,6 +43,11 @@ class db extends config{
         }
     }
 
+    // table existance checking ...
+	/**
+	 * Lchecks if table exists in database 
+	 * @param {?string} tableName - name of table to check
+	 */
     public function isTableExists($tableName){
         $tablesInDb = @mysql_query('SHOW TABLES FROM '.$this->db_name.' LIKE "'.$tableName.'"');
         if($tablesInDb)
@@ -48,16 +62,5 @@ class db extends config{
             }
         }
     }
-
-    public function create($tablename, $columns){
-        $query = "create table if not exists $table ($columns);";
-        $res = @mysql_query($query, $this->conn) or die(mysql_error());
-        if($this->isTableExists($tableName)){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
 }
 ?> 

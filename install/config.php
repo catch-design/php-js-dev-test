@@ -1,4 +1,9 @@
 <?php
+
+  // config class ...
+	/**
+	 * config class to save get data from config file
+	 */
 class config {
     public $isInstalled = false;
     public $db_host = "";
@@ -10,6 +15,10 @@ class config {
         $this->loadConfig();
     }
 
+      // loads config from file ...
+	/**
+	 * loads config from file
+	 */
     public function loadConfig() {
         $string = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/config.json');
         $json_a = json_decode($string, true);
@@ -32,6 +41,10 @@ class config {
         ));
     }
 
+    // saves cofig into file ...
+	/**
+	 * saves config into file
+	 */
     public function saveConfig(){
         $fp = fopen($_SERVER['DOCUMENT_ROOT'] . '/catchnz_test/config.json', 'w');
         fwrite($fp, $this->toJson());
