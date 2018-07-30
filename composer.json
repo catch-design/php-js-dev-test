@@ -1,0 +1,17 @@
+{
+    "name": "jaron-steenson/php-js-dev-test-master",
+    "authors": [
+        {
+            "name": "Jaron Steenson",
+            "email": "jaronsteenson@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JaronSteenson\\": "php"
+        }
+    }
+}

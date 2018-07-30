@@ -1,0 +1,18 @@
+.app-view {
+    text-align: center;
+}
+
+.customer-load-button {
+    margin-top: 300px;
+}
+
+.customer-table {
+    text-align: left;
+}
+
+.customer-table td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

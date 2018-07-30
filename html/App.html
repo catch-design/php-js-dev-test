@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="app-view js-app-view">
+
+    </div>
+
+    <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/handlebars-v4.0.11.js"></script>
+    <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone-min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+
+    <script id="js-app-hbs" type="text/template">
+        {{#if customers}}
+            <table class="customer-table table">
+                <thead>
+                <tr>
+                    {{#each customerFieldNames}}
+                        <th scope="col">{{this}}</th>
+                    {{/each}}
+                </tr>
+                </thead>
+                <tbody>
+                {{#each customers}}
+                    <tr>
+                        {{#each this}}
+                            <td>{{this}}</td>
+                        {{/each}}
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        {{else}}
+            <button type="submit" class="customer-load-button js-customer-load-button btn btn-default">Load customers</button>
+        {{/if}}
+    </script>
+
+    <script type="text/javascript" src="js/App.js"></script>
+
+</body>
+</html>
