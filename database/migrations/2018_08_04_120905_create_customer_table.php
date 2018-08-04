@@ -23,7 +23,7 @@ class CreateCustomerTable extends Migration
             $table->string('company');
             $table->string('city');
             $table->string('title');
-            $table->string('website');
+            $table->longtext('website', 2083);
             $table->timestamps();
         });
     }
