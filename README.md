@@ -42,3 +42,21 @@ http://localhost:8000/api/customers
 Display customer table
 http://localhost:8000/api/customerlist
 
+ReAct 
+Webpack compile
+
+php artisan migrate:install
+
+Schema DB
+php artisan make:migration create_customer_table
+database/migrations/2018_08_04_120905_create_customer_table.php
+
+Model
+app/Customer.php
+
+Controller
+app/Http/Controllers/customerController.php
+
+View
+resources/views/customer.blade.php
+
