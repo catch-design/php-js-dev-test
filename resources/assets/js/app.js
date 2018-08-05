@@ -13,70 +13,100 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-//require('./components/Example');
-//require('./components/Customer');
-
-
 import axios from 'axios';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-    class Customer extends Component {
-      constructor () {
-        super()
-        this.state = {
-          customers: []
-        }
-      }
+class Customer extends Component {
+	constructor() {
+		super()
+		this.state = {
+			customers: [],
+			isShow: false	
+		}
 
-      componentDidMount () {
-        axios.get('/api/customer').then(response => {
-          this.setState({
-            customers: response.data
-          })
-        })
-      }
+    	this.handleClick = this.handleClick.bind(this);
+	}
 
-      renderCustomers() {
-	    return this.state.customers.map(customer => {
-	        return (
-	            /* When using list you need to specify a key
-	             * attribute that is unique for each list item
-	            */
-	            <li key={customer.id} >	                
-	                { customer.first_name } 
- 	                { customer.last_name } 
- 	                { customer.email } 
- 	                { customer.gender }
-	            </li>      
-	        );
-	    })
+	componentDidMount() {
+		axios.get('/api/customer').then(response => {
+		  this.setState({
+			customers: response.data
+		  })
+		})
+	}
+	
+	handleClick() {
+		this.setState(prevState => ({
+			isShow: !prevState.isShow
+		}));
+	}
+
+	renderCustomers() {
+		if (this.state.isShow){
+			return this.state.customers.map(customer => {
+				return (
+					/* When using list you need to specify a key
+					 * attribute that is unique for each list item
+					*/
+					<tr key={customer.id} >
+						<td>{ customer.first_name } { customer.last_name }</td>
+						<td>{ customer.email }</td>
+						<td>{ customer.gender }</td>
+						<td>{ customer.ip_address }</td>
+						<td>{ customer.company }</td>
+						<td>{ customer.city }</td>
+						<td>{ customer.title }</td>
+						<td>{ customer.website }</td>
+					</tr>
+				);
+			})
+		} else {
+			return (
+				<tr><td  colSpan='8'>No data</td></tr>
+			)
+		}
+		
+	}
+
+	render() {
+		const { customers } = this.state
+		return (
+			<div className='container'>
+				<div className='row justify-content-center'>
+				  <div className='col-md-12'>
+						<button className="btn btn-primary" onClick={this.handleClick}>
+						  Show Table
+						</button>
+
+						<table className="table">
+							<thead>
+								<tr>
+									<td>Name</td>
+									<td>email</td>
+									<td>gender</td>
+									<td>ip_address</td>
+									<td>company</td>
+									<td>city</td>
+									<td>itle</td>
+									<td>website</td>
+								</tr>
+							</thead>
+							<tbody className='list-group list-group-flush'>
+								{ this.renderCustomers() }
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		)
 	  }
+	}
 
-      render () {
-        const { customers } = this.state
-        return (
-          <div className='container py-4'>
-            <div className='row justify-content-center'>
-              <div className='col-md-8'>
-                <div className='card'>
-                  <div className='card-header'>All Customers</div>
-                  <div className='card-body'>                    
-                    <ul className='list-group list-group-flush'>
-                      { this.renderCustomers() }
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-      }
-    }
-
-    export default Customer
+export default Customer
 
 if (document.getElementById('app')) {
-    ReactDOM.render(<Customer />
-    	, document.getElementById('app'));
+ReactDOM.render(
+	<Customer />
+	, document.getElementById('app'));
 }
