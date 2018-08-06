@@ -71,20 +71,20 @@ if [ $# -gt 0 ];then
         $COMPOSE run --rm \
             -w /var/www/html \
             app \
-            ./vendor/bin/phpunit ./mysite/tests \" \" d=l
+            ./vendor/bin/phpunit ./app/tests \" \" d=l
 
     elif [ "$1" == "testfunction" ]; then
         shift 1
         $COMPOSE run --rm \
             -w /var/www/html \
             app \
-            ./vendor/bin/phpunit ./mysite/tests  --filter "$@" \" \" d=l
+            ./vendor/bin/phpunit ./app/tests  --filter "$@" \" \" d=l
     elif [ "$1" == "testsome" ]; then
         shift 1
         $COMPOSE run --rm \
             -w /var/www/html \
             app \
-            ./vendor/bin/phpunit ./mysite/tests/"$@" \" \" d=l
+            ./vendor/bin/phpunit ./app/tests/"$@" \" \" d=l
     elif [ "$1" == "deletecache" ]; then
         shift 1
         if [ "$(ls -a ./silverstripe-cache/ )" ]; then
