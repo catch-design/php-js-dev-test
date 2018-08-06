@@ -1,3 +1,4 @@
+
 # PHP JavaScript Developer Test
 
 A simple test for PHP / JavaScript Developers
@@ -24,3 +25,19 @@ A simple test for PHP / JavaScript Developers
 * Use patterns like MVC, ORM
 * Compile any front end assets with a build tool like gulp
 * Unit tests
+
+# php-js-dev-test
+A simple test for PHP / JavaScript Developers
+
+Please install Laravel framework
+version. Laravel Framework 5.6.29
+
+csv importing function
+http://localhost:8000/customerimport
+
+web service api link for display all customers
+http://localhost:8000/api/customers
+
+Display customer table
+http://localhost:8000/api/customerlist
+
