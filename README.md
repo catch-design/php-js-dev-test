@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 # PHP JavaScript Developer Test
@@ -30,33 +31,33 @@ A simple test for PHP / JavaScript Developers
 # php-js-dev-test
 A simple test for PHP / JavaScript Developers
 
+<pre>
 Please install Laravel framework
 version. Laravel Framework 5.6.29
 
-*csv importing function
+csv importing function
 http://localhost:8000/customerimport
 
-*web service api link for display all customers
+web service api link for display all customers
 http://localhost:8000/api/customers
 
-*Display customer table
+Display customer table
 http://localhost:8000/api/customerlist
 
 *ReAct 
 *Webpack compile
 
-*php artisan migrate:install
-
-*Schema DB
-php artisan make:migration create_customer_table
+Schema DB<br/>
+php artisan migrate:install
+php artisan make:migration create_customer_table<br/>
 database/migrations/2018_08_04_120905_create_customer_table.php
 
-*Model 
+Model 
 app/Customer.php
 
-*Controller
+Controller
 app/Http/Controllers/customerController.php
 
-*View
+View
 resources/views/customer.blade.php
-
+</pre>
