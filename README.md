@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+
 # PHP JavaScript Developer Test
 
 A simple test for PHP / JavaScript Developers
@@ -24,3 +27,37 @@ A simple test for PHP / JavaScript Developers
 * Use patterns like MVC, ORM
 * Compile any front end assets with a build tool like gulp
 * Unit tests
+
+# php-js-dev-test
+A simple test for PHP / JavaScript Developers
+
+<pre>
+Please install Laravel framework
+version. Laravel Framework 5.6.29
+
+csv importing function
+http://localhost:8000/customerimport
+
+web service api link for display all customers
+http://localhost:8000/api/customers
+
+Display customer table
+http://localhost:8000/api/customerlist
+
+*ReAct 
+*Webpack compile
+
+Schema DB<br/>
+php artisan migrate:install
+php artisan make:migration create_customer_table<br/>
+database/migrations/2018_08_04_120905_create_customer_table.php
+
+Model 
+app/Customer.php
+
+Controller
+app/Http/Controllers/customerController.php
+
+View
+resources/views/customer.blade.php
+</pre>
