@@ -5,7 +5,7 @@ A simple test for PHP / JavaScript Developers
 ## Installation
 
 Install Docker if it is not already \
-Open up a tab in the terminal and run \
+Open up a tab in the terminal, cd into the project root and run \
 `silverstripe-docker/develop.sh build` \
 then \
 `silverstripe-docker/develop.sh up`
@@ -43,3 +43,6 @@ http://localhost:8888/
 if something on the page is not loading, try running
 
 http://localhost:8888/?flush=all
+
+When Finished go back to the terminal tab running the Docker containers
+and run ctrl-c then `silverstripe-docker/develop.sh down`
