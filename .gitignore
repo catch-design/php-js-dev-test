@@ -3,3 +3,4 @@
 /themes/cache/
 /public/resources/
 /themes/catch/node_modules/
+/silverstripe-cache/*
