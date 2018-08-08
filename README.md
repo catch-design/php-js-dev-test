@@ -33,7 +33,7 @@ run \
 to build the database
 
 Then run \
-`silverstripe-docker/develop.sh sake importCSV` \
+`silverstripe-docker/develop.sh sake CSVImportTask` \
 to run the import CSV script which pulls the customer data into the database
 
 Then the page with the button should be available on
