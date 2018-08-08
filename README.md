@@ -8,33 +8,33 @@ Install Docker if it is not already \
 Open up a tab in the terminal and run \
 `silverstripe-docker/develop.sh build` \
 then \
-`silverstripe-docker/develop.sh up` \
+`silverstripe-docker/develop.sh up`
 
-Which will get all the docker containers running \
+Which will get all the docker containers running
 
 ### IN A NEW TAB
 
-In a new terminal window run the following commands from the project root. \
+In a new terminal window run the following commands from the project root.
 
 run \
 `silverstripe-docker/develop.sh composer install` \
-To Install all php dependencies \
+To Install all php dependencies
 
 run \
 `silverstripe-docker/develop.sh npm install` \
-to install all front end dependencies \
+to install all front end dependencies
 
 run \
 `silverstripe-docker/develop.sh npm run production` \
-to bundle the front end assets \
+to bundle the front end assets
 
 run \
 `silverstripe-docker/develop.sh devbuild` \
-to build the database \
+to build the database
 
 Then run \
 `silverstripe-docker/develop.sh sake importCSV` \
-to run the import CSV script which pulls the customer data into the database \
+to run the import CSV script which pulls the customer data into the database
 
 Then the page with the button should be available on
 
