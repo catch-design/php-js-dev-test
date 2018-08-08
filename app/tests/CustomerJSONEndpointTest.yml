@@ -1,0 +1,35 @@
+Page:
+  One:
+    "URLSegment" : "home"
+
+sasky\catchTest\app\Customer:
+  One:
+    "FirstName": "Terry"
+    "LastName": "Ruiz"
+    "Email": "truiz5@unc.edu"
+    "Gender": "Male"
+    "IPAddress": "188.77.133.124"
+    "Company": "Nlounge"
+    "City": "Souflí"
+    "Title": ""
+    "Website": ""
+  Two:
+    "FirstName": "Lawrence"
+    "LastName": "West"
+    "Email": "lwestc@1688.com"
+    "Gender": "Male"
+    "IPAddress": "109.133.189.108"
+    "Company": "Gabcube"
+    "City": "Coayllo"
+    "Title": "Electrical Engineer"
+    "Website": "http://symantec.com/in.js?sapien=magnis&sapien=dis&non=parturient&mi=montes&integer=nascetur&ac=ridiculus&neque=mus&duis=etiam&bibendum=vel&morbi=augue&non=vestibulum&quam=rutrum&nec=rutrum"
+  Three:
+    "FirstName": "Nicholas"
+    "LastName": "Hart"
+    "Email": "nharti@oakley.com"
+    "Gender": "Male"
+    "IPAddress": "182.5.26.33"
+    "Company": "Riffpath"
+    "City": "Santa Cruz De Tenerife"
+    "Title": "Recruiting Manager"
+    "Website": "https://japanpost.jp/quam/turpis/adipiscing/lorem/vitae.js?primis=consequat&in=metus&faucibus=sapien&orci=ut&luctus=nunc&et=vestibulum&ultrices=ante&posuere=ipsum&cubilia=primis&curae=in&duis=faucibus&faucibus=orci&accumsan=luctus&odio=et&curabitur=ultrices&convallis=posuere&duis=cubilia&consequat=curae&dui=mauris&nec=viverra&nisi=diam&volutpat=vitae&eleifend=quam&donec=suspendisse&ut=potenti&dolor=nullam&morbi=porttitor&vel=lacus&lectus=at&in=turpis&quam=donec&fringilla=posuere"

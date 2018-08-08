@@ -1,0 +1,39 @@
+<phpunit bootstrap="vendor/silverstripe/framework/tests/bootstrap.php"
+		 backupGlobals="false"
+		 backupStaticAttributes="false"
+		 colors="true"
+		 convertErrorsToExceptions="true"
+		 convertNoticesToExceptions="true"
+		 convertWarningsToExceptions="true"
+		 processIsolation="false"
+		 stopOnFailure="true">
+
+	<testsuite name="Default">
+		<directory>app/tests</directory>
+	</testsuite>
+
+    <!-- core components -->
+    <testsuite name="core">
+		<directory>vendor/silverstripe/cms/tests/php</directory>
+		<directory>vendor/silverstripe/framework/tests/php/</directory>
+		<directory>vendor/silverstripe/assets/tests/php/</directory>
+        <directory>vendor/silverstripe/versioned/tests/php/</directory>
+    </testsuite>
+
+    <!-- admin components -->
+    <testsuite name="admin">
+        <directory>vendor/silverstripe/cms/tests/</directory>
+        <directory>vendor/silverstripe/admin/tests/php/</directory>
+        <directory>vendor/silverstripe/campaign-admin/tests/php/</directory>
+        <directory>vendor/silverstripe/asset-admin/tests/php/</directory>
+        <directory>vendor/silverstripe/graphql/tests/</directory>
+        <directory>vendor/silverstripe/siteconfig/tests/php/</directory>
+        <directory>vendor/silverstripe/reports/tests/</directory>
+    </testsuite>
+
+	<groups>
+		<exclude>
+			<group>sanitychecks</group>
+		</exclude>
+	</groups>
+</phpunit>
