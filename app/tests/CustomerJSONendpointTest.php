@@ -16,7 +16,6 @@ class CustomerJSONEndpointTest extends FunctionalTest
         // THEN the json array should contain 3 records
         $this->assertEquals(3, count($jsonArray));
         // just check a couple of the fields
-        var_dump($jsonArray);
         $this->assertEquals('Nicholas', $jsonArray[2]['first_name']);
         $this->assertEquals('lwestc@1688.com', $jsonArray[1]['email']);
     }
