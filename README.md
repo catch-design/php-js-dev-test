@@ -8,7 +8,7 @@ A simple test for PHP / JavaScript Developers
 2. Write a script to Import the CSV file located in `data/customers.csv` into a database (MySQL or Mongo is preferred)
 3. Create a basic PHP web service that serves the data from the database as JSON
 4. Create a basic web page that asynchronously loads the JSON into a list or table when you click a button
-4. Email tech-tests@catchdesign.co.nz with a
+5. Email tech-tests@catchdesign.co.nz with:
     1. A link to your repo OR
     2. A zip file of your project including git config/metadata
 
